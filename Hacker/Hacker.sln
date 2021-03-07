@@ -1,7 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevionGames.UIWidgets", "DevionGames.UIWidgets.csproj", "{C2EF0C7E-C439-773A-F4F0-6FEE23E959C0}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{E013C4A1-9976-9C44-F610-1CE21093EF55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevionGames.Utilities", "DevionGames.Utilities.csproj", "{2AB351CD-BE8C-F567-FC69-D7FC78B0D923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{2163E87A-4069-7D4A-8EAF-14ECBF960B5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +15,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2EF0C7E-C439-773A-F4F0-6FEE23E959C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2EF0C7E-C439-773A-F4F0-6FEE23E959C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2EF0C7E-C439-773A-F4F0-6FEE23E959C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2EF0C7E-C439-773A-F4F0-6FEE23E959C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E013C4A1-9976-9C44-F610-1CE21093EF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E013C4A1-9976-9C44-F610-1CE21093EF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E013C4A1-9976-9C44-F610-1CE21093EF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E013C4A1-9976-9C44-F610-1CE21093EF55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB351CD-BE8C-F567-FC69-D7FC78B0D923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB351CD-BE8C-F567-FC69-D7FC78B0D923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB351CD-BE8C-F567-FC69-D7FC78B0D923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB351CD-BE8C-F567-FC69-D7FC78B0D923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2163E87A-4069-7D4A-8EAF-14ECBF960B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2163E87A-4069-7D4A-8EAF-14ECBF960B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2163E87A-4069-7D4A-8EAF-14ECBF960B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2163E87A-4069-7D4A-8EAF-14ECBF960B5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
