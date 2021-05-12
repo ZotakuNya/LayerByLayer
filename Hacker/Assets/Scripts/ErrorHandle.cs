@@ -6,6 +6,9 @@ public class ErrorHandle : MonoBehaviour
 {
     public Text content;
     public float speed;
+    public Image bg;
+    public Color ErrorColor;
+    public Color SuccessColor;
 
     private RectTransform _rectTransform;
 
@@ -16,7 +19,15 @@ public class ErrorHandle : MonoBehaviour
 
     public void ErrorReport(string text)
     {
+        bg.color = ErrorColor;
         content.text = "Error: " + text;
+        StartCoroutine(IEApper());
+    }
+
+    public void PassReport(string text)
+    {
+        bg.color = SuccessColor;
+        content.text = "Success: " + text;
         StartCoroutine(IEApper());
     }
 
