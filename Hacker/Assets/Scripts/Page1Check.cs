@@ -10,6 +10,8 @@ public class Page1Check : MonoBehaviour
     public Button lockBtn;
     public ErrorHandle eh;
 
+    public GameCtrl gc;
+
     string correct = @"<!DOCTYPE html>
 <html>
 
@@ -31,5 +33,11 @@ public class Page1Check : MonoBehaviour
         {
             eh.ErrorReport("编译错误");
         }
+    }
+
+    public void Success()
+    {
+        gc.mails[1].SetActive(true);
+        eh.PassReport("成功了,请查收邮件");
     }
 }

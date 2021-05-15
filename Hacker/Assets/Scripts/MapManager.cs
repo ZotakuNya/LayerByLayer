@@ -20,6 +20,7 @@ public class MapManager : MonoBehaviour
             netMap.Add(GenerateNetMap());
         }
     }
+
     private Node GenerateNetMap()
     {
         int x = Random.Range(-width / 2 + minDis / 2, width / 2 - minDis / 2);
@@ -38,5 +39,11 @@ public class MapManager : MonoBehaviour
         GameObject go = Instantiate(deviceNode,transform);
         go.GetComponent<RectTransform>().anchoredPosition = CurCoordinate;
         return new Node(CurCoordinate);
+    }
+
+    private void DrawLine()
+    {
+        int node0 = Random.Range(0, nodeNum);
+
     }
 }

@@ -9,6 +9,9 @@ public class Page3Check : MonoBehaviour
     public PageSwitch ps;
     public ErrorHandle eh;
 
+    public Button btn;
+    public GameCtrl gc;
+
     string correct = @"<!DOCTYPE html>
 <html>
 
@@ -50,11 +53,27 @@ ExhaustiveAttack(""ABCD"",form);
     {
         if(result.text == correct)
         {
+            if (result.text == correct)
+            {
+                btn.onClick.RemoveAllListeners();
+                btn.onClick.AddListener(
+                    delegate () {
+                        gc.mails[3].SetActive(true);
+                        eh.PassReport("成功了,请查收邮件");
+                    }
+                );
+                ps.SwitchToGraphic();
+            }
             ps.SwitchToGraphic();
         }
         else
         {
             eh.ErrorReport("编译错误");
         }
+    }
+
+    public void Result()
+    {
+        eh.ErrorReport("未通过");
     }
 }

@@ -24,7 +24,7 @@ public class SaveDataManager : MonoBehaviour
 
     private void Start()
     {
-        _path = Application.dataPath + "/StreamingFile" + "/" + gameObject.name + ".txt";
+        _path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/" + gameObject.name + ".txt";
         if (File.Exists(_path))
         {
             _curData = LoadByBin();

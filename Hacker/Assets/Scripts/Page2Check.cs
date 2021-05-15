@@ -8,6 +8,9 @@ public class Page2Check : MonoBehaviour
     public InputField result;
     public PageSwitch ps;
     public ErrorHandle eh;
+    public Button btn;
+
+    public GameCtrl gc;
 
     string correct = @"<!DOCTYPE html>
 <html>
@@ -49,11 +52,23 @@ void Check()
     {
         if(result.text == correct)
         {
+            btn.onClick.RemoveAllListeners();
+            btn.onClick.AddListener(
+                delegate(){
+                    gc.mails[2].SetActive(true);
+                    eh.PassReport("成功了,请查收邮件");
+                }
+            );
             ps.SwitchToGraphic();
         }
         else
         {
             eh.ErrorReport("编译错误");
         }
+    }
+
+    public void Result()
+    {
+        eh.ErrorReport("未通过");
     }
 }

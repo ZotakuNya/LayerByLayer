@@ -10,6 +10,7 @@ public class Page4Check : MonoBehaviour
     public ErrorHandle eh;
     public Button btn;
     public PageManager pm;
+    public GameCtrl gc;
 
 
     string correct = @"<!DOCTYPE html>
@@ -30,6 +31,7 @@ public class Page4Check : MonoBehaviour
         {
             btn.onClick.AddListener(pm.CloseAll);
             btn.onClick.AddListener(pm.OpenTrap);
+            gc.mails[4].SetActive(true);
             ps.SwitchToGraphic();
         }
         else
