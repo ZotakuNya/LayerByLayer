@@ -57,6 +57,9 @@ void Check()
                 delegate(){
                     gc.mails[2].SetActive(true);
                     eh.PassReport("成功了,请查收邮件");
+                    gc.pc.Show();
+                    gc.curStage = "Page2";
+                    gc.point += 900;
                 }
             );
             ps.SwitchToGraphic();

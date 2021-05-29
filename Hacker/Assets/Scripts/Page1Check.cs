@@ -39,5 +39,8 @@ public class Page1Check : MonoBehaviour
     {
         gc.mails[1].SetActive(true);
         eh.PassReport("成功了,请查收邮件");
+        gc.pc.Show();
+        gc.curStage = "Page1";
+        gc.point += 900;
     }
 }
